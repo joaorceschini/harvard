@@ -3,6 +3,9 @@
 typedef char *string;
 
 int main(void) {
-  string s = "test";
-  printf("%s\n", s);
+  char *s = "test";
+  printf("%c", *s);
+  printf("%c", *(s + 1));
+  printf("%c", *(s + 2));
+  printf("%c\n", *(s + 3));
 }
